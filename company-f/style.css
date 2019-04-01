@@ -1,0 +1,4 @@
+html{ font-family: Arial, Helvetica, sans-serif }
+html, body, h1, frameset, frame{ margin:0; padding:0; box-sizing: border-box;}
+frame{ border: 0; }
+#nav{ background-color: #FFCC01; }
