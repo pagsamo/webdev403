@@ -1,21 +1,55 @@
-body, nav, ul, li, h1, h3, p{ margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; box-sizing: border-box;}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-nav{ background-color: #24292e; color: white; width:100%; padding: 10px; }
-nav ul, li{ display: inline-block; }
-nav ul li a{ color: white; text-decoration: none; font-size: 1em; }
-nav img{ width:25px;}
-nav ul:first-child{ padding-left:25px; }
-nav ul:last-child{ float: right; padding-right:25px;}
-nav ul input{ border-radius: 3px; background-color: #404448; color: white;}
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
 
-#main{display: block; padding:0 15%;}
+.container {
+    position: relative;
+    width: 92%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
-#main ul li{ width:33%; border:1px solid #ccc; }
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
 
-#regform{ width:70%; float:left; }
-#love{ width: 30%; float: left;}
 
-#othernav{ width:80%; margin:0 auto; display: block;}
-#othernav h1{ width:30%; float:left; }
-#othernav nav{ width:70%; float:left; background-color:white; }
-#othernav li{ display: block; color: #ccc; }
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.u-pull-right {
+    float: right;
+}
+
+.u-pull-left {
+    float: left;
+}
+
+
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{ background-color: #F9F9F9;}
+        #main{ width: 20%; margin:4% auto;}
+        a{ text-decoration: none;}
+        img{ width:50px; }
+        form{ border: 1px solid #ccc; padding:4%; border-radius: 10px;}
+        .inputtext{ width: 100%; height:2.5em;}
+        ul li{ display: inline-block;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="row" style="text-align: center;">
+                <img src="github-logo-black.png" alt="logo">
+                <h2 style="font-weight: 100">Sign in to GitHub</h2>
+        </div>
+        <div class="row">
+            <form action="#">
+                <label for="username">Username or email address</label><br>
+                <input class="inputtext" type="text" name="username">
+                <br><br><br>
+
+                <label for="password" style="margin-right:10px;">Password</label><a href="#">Forgot password?</a><br>
+                <input class="inputtext" type="password" name="password"><br><br>
+
+                <input type="submit" value="Sign in" name="signin" style="width:100%; height:2.5em; font-size: 1em; border-radius: 20px; background-color: #2FBE50; color: white; margin-top: 10px;">
+            </form>
+        </div>
+
+        <div class="row" style="border: 1px solid #ccc; margin:4% 0; text-align: center; border-radius: 10px;">
+            <p>New to GitHub? <a href="#">Create an account.</a></p>
+        </div>
+
+        <div class="row" style="text-align: center; margin-top:5em;">
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Contact GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

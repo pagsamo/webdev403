@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        #nav {
+            background-color: #24292E;
+            padding: 20px;
+        }
+
+        #nav ul li {
+            display: inline-block;
+        }
+
+        #nav li {
+            padding: 0 2%;
+        }
+
+        #nav img {
+            width: 30px;
+        }
+
+        #nav ul li a {
+            color: white;
+            font-size: 1.25em;
+        }
+
+        #nav input {
+            height: 30px;
+            background-color: #3F4448;
+            color: white;
+            border-radius: 3px;
+            width: 12em;
+        }
+
+        #main {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        #main .four.columns {
+            border: 1px solid #ccc;
+            width: 33%;
+            margin: 0;
+            padding-left: 4%;
+            background-color: #FAFBFC;
+        }
+
+        #reglove label {
+            font-weight: bold;
+        }
+
+        #reglove span {
+            color: red;
+        }
+
+        #main .four.columns p:first-child {
+            font-weight: bold;
+        }
+
+        #reglove {
+            width: 70%;
+            margin: 4% auto;
+        }
+
+        #reglove input {
+            width: 70%;
+            height: 2em;
+            background-color: #FAFBFC;
+            border-radius: 10px;
+        }
+
+        #reglove .three.columns {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        #reglove h3,
+        #reglove ul {
+            margin: 4%;
+        }
+
+        #reglove li {
+            list-style-type: none;
+        }
+
+        #reglove .three.columns ul:last-child li:before {
+            content: '✓ ';
+        }
+
+        #othernav {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #othernav ul li {
+            list-style-type: none;
+        }
+
+        #othernav ul li a {
+            color: grey;
+        }
+        #footer{ background-color: #FAFBFC; padding:1% 4%;}
+        #footer ul{ margin:0; padding:0;}
+        #footer ul li {
+            display: inline-block;
+            margin:0; padding:0;
+        }
+        #footer ul li a{ color: grey;}
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="row">
+            <div class="seven columns">
+                <ul>
+                    <ul>
+                        <li><a href="github.com"></a><img src="github-logo.png" alt="github-logo"></a></li>
+                        <li><a href="#">Why GitHub?</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="three columns">
+                <ul>
+                    <li>
+                        <form action="#" class="reset">
+                            <input type="text" placeholder="Search GitHub">
+                        </form>
+                    </li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="row">
+            <h1>Join GitHub</h1>
+            <h2 style="font-weight:100;">The best way to design, build and ship software.</h2>
+        </div>
+        <div id="steps">
+            <div class="row">
+                <div class="four columns">
+                    <p>Step 1:</p>
+                    <p>Set up your account</p>
+                </div>
+                <div class="four columns">
+                    <p>Step 2:</p>
+                    <p>Choose your subscription</p>
+                </div>
+                <div class="four columns">
+                    <p>Step 3:</p>
+                    <p>Tailor your experience</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="reglove">
+        <div class="row">
+            <div class="nine columns">
+                <h2>Create your personal account</h2>
+                <form action="#">
+                    <label for="Username">Username <span>*</span></label><br>
+                    <input type="text" name="username">
+                    <p>Thiw will be your username. You can add the name of your organization later.</p>
+                    <label for="email">Email address <span>*</span> </label><br>
+                    <input type="text" name="email">
+                    <p>We'll occasionally send updates about your account to this inbox. We'll never share your email
+                        address with anyone.</p>
+                    <label for="password">Password <span>*</span></label><br>
+                    <input type="password" name="password">
+                    <p>Make sure it's <span>at least 15 charaacters</span> OR <span>at least 8 characters including a
+                            number
+                            and a lowercase letter.</span> <span><a href="#">Learn more.</a></span></p>
+                    <hr>
+                    <p>By clicking "Create an account" below, you agree to our <span>Terms of Service</span> and
+                        <span>Privacy Statement.</span> We'll occasionally send you account related emails</p>
+                    <hr>
+                    <input style="height: 3em; background-color: #94D3A2; color: white; width:10em;" type="submit"
+                        name="submit" value="Create an account">
+                </form>
+            </div>
+            <div class="three columns">
+                <h3>You'll love GitHub</h3>
+                <hr>
+                <ul>
+                    <li><b>Unlimited</b> public repositories</li>
+                    <li><b>Unlimited</b> private repositories</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Limitless collaboration</li>
+                    <li>Frictionless development</li>
+                    <li>Open source community</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="othernav">
+        <div class="row">
+            <div class="three columns">
+                <h1>GitHub</h1>
+            </div>
+            <div class="nine columns">
+                <div class="row">
+                    <div class="three columns">
+                        <ul>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Enterprise</a></li>
+                            <li><a href="#">Customer stories</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="three columns">
+                        <ul>
+                            <li><a href="#">Platform</a></li>
+                            <li><a href="#">Developer API</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Atom</a></li>
+                            <li><a href="#">Electron</a></li>
+                            <li><a href="#">GitHub Desktop</a></li>
+                        </ul>
+                    </div>
+                    <div class="three columns">
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Community Forum</a></li>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Contact GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="three columns">
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="row">
+            <ul>
+                <li><a href="#">&copy; 2019 Github</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
