@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facebook</title>
+    <style>
+        html, body{ margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; background-color: #DEE1EF;}
+        h1{ margin:0; padding:0; }
+        div{ box-sizing: border-box; margin:0; padding:0; }
+        a{ text-decoration: none;}
+        .row::after{ content: ""; clear: both; }
+
+        .topnav{ background-color: #3B539A; color: white; display: flex; padding:1em;}
+        .main{ margin-top:3em;}
+        .container{ width:70%; margin:0 auto;}
+        .topnav .container{ display:flex; justify-content: center; }
+        .logo{ width:60%;  float: left; display: flex; align-items: center;}
+        .login{ width:40%;  float: left; }
+        .login form{ display:flex; }
+        .login a{ color: #9cb4d8; }
+        .login input{ width:90%; margin:5px 0;}
+        .username{ width:40%; margin:0; float:left; }
+        .password{ width:40%; margin:0; float: left; }
+        .login-button{ width:20%; margin:0; float: left; display: flex; align-items: center; }
+        .login-button input{ background-color: #4260B4; color: white; padding:7px; border-radius: 5px; }
+
+        .info{ width:60%;  float: left; padding-right:3em;}
+        .info p{ margin:10% 0; margin-left:5%;}
+        .signup{ width:40%;  float: left; }
+        .signup a{ color: #3B539A; }
+        .signup h1{ margin-bottom:0; }
+        .signup h3{ font-weight:100; margin-top:0;  }
+        .signup h3:last-child{ margin-bottom:0;}
+        .signup input[type='text'], .signup input[type='password']{ height:2em; border-radius:5px; border: 1px solid #ccc; background-color: white; width:100%}
+        .signup select option, .signup select{ background-color: white; }
+        .signup .row{ margin-top:10px; width:100%; display:flex;}
+        .signup .row .fifty:first-child{ width:44%; margin-right:6%; float: left; }
+        .signup .row .fifty:last-child{ width:50%; float: left; }
+        .signup .row .fifty input{ width: 100%; }
+        .signup input[type='submit']{ background-color: #67ae55; color: white; padding:1em 5em; border-radius: 5px; font-size:115%;}
+        .signup select[name='year']{ margin-right:10px; }
+        
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="container">
+            <div class="logo">
+                <h1>facebook</h1>
+            </div>
+            <div class="login">
+                <form action="#" method="post">
+                <div class="username">
+                    <label for="username">Email or Phone</label><br>
+                    <input type="text" name="username">
+                </div>
+                <div class="password">
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password">
+                     <br>
+                    <a href="#">Forgot password</a>
+                </div>
+                <div class="login-button">
+                        <input type="submit" value="Log In" name="submit">
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="info">
+                <h1>Connect with friends and the world around you on Facebook.</h1>
+                <p>
+                    <b>See photos and updates</b><span> from friends on News Feed</span>
+                </p>
+                <p>
+                    <b>Share what's new</b> <span> in your life on your Timeline</span>
+                </p>
+                <p>
+                    <b>Find more</b><span> of what you're looking for with Facebook Search</span>
+                </p>
+            </div>
+            <div class="signup">
+                <h1>Sign Up</h1>
+                <h3>It's free and always will be.</h3>
+                <form action="#">
+                <div class="row name">
+                    <div class="fifty">
+                        <input type="text" name="first_name" placeholder="First Name">
+                    </div>
+                    <div class="fifty">
+                        <input type="text" name="last_name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px;">
+                    <input type="text" name="mobile_or_email" placeholder="Mobile number or email">
+                </div>
+                <div class="row">
+                    <input type="password" name="passowrd" placeholder="Password">
+                </div>
+                <div class="row">
+                    <h3>Birthday</h3>
+                </div>
+                <div class="row bday">
+                    <select name="month" id="">
+                        <option value="january">january</option>
+                        <option value="february">february</option>
+                        <option value="march">march</option>
+                        <option value="april" selected>april</option>
+                        <option value="may">may</option>
+                        <option value="june">june</option>
+                        <option value="july">july</option>
+                        <option value="august">august</option>
+                        <option value="september">september</option>
+                        <option value="october">october</option>
+                        <option value="november">november</option>
+                        <option value="december">december</option>
+                    </select>
+                    <select name="day" id="">
+                        <option value="2">2</option>
+                    </select>
+                    <select name="year" id="">
+                        <option value="1994">1994</option>
+                    </select>
+                    <a href="#">Why do I need to provide my birthday?</a>
+                </div>
+                <div class="row">
+                    <input type="radio" name="gender" value="female>
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="gender">Male</label>
+                </div>
+                <div class="row">
+                    <p>By clicking Sign Up you agree to our <a href="#">Terms, Data Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Sign Up" name="submit">
+                </div>
+            </form>
+                <div class="row">
+                    <p><a href="#">Create a Page</a> for a celebrity, band or business.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
